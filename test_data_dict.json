@@ -1,0 +1,284 @@
+[
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Tag key",
+                "Definition": "This is a foreign key column to connect to other tables.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "This is a foreign key column to connect to other tables.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "int",
+                "Name": "Manufacturing date key",
+                "Definition": "This is a foreign key column to connect to other tables related to manufacturing dates.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "smallint",
+                "Name": "Tags",
+                "Definition": "A numerical identifier used to categorize or track inventory items.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag #",
+                "Definition": "A unique identifier used to track an item instance.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Item #",
+                "Definition": "Unique identifier for each inventory item, represented as a string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Heat #",
+                "Definition": "Identifier for a specific heat treatment process or batch.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country",
+                "Definition": "Represents the country where the item was manufactured or sourced.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country name",
+                "Definition": "Represents the name of the country where the item was produced or sourced.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Disposition code",
+                "Definition": "Represents the status or condition of an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Disposition status",
+                "Definition": "Indicates the current condition or status of an item in inventory.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Outside processor tag",
+                "Definition": "A tracking parameter for monitoring external processing of an item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Master tag #",
+                "Definition": "Unique identifier for tracking a specific instance of an item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Mill tag #",
+                "Definition": "A unique identifier used to track items in the mill inventory.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag type",
+                "Definition": "Indicates the classification or category of the tracking parameter.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Silver",
+                "Definition": "Represents the name or identifier of a silver item in inventory.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Aluminum",
+                "Definition": "Represents the aluminum material type used in inventory items.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Boron",
+                "Definition": "Represents a string value associated with the Boron inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Beryllium",
+                "Definition": "Represents information related to the element Beryllium, stored as text.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Coil weight",
+                "Definition": "Represents the weight of a coil in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Inner diameter",
+                "Definition": "Represents the measurement of the inside width of a cylindrical object.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Length",
+                "Definition": "Represents the measurement of an item's length in a numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Outer diameter",
+                "Definition": "Represents the measurement of the item's outer circumference in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "PIW",
+                "Definition": "Represents a unique identifier or code for a product inventory warehouse.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quality",
+                "Definition": "Describes the condition or standard of the item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Thickness",
+                "Definition": "Represents the measurement of an item's thickness in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Width",
+                "Definition": "Represents the measurement of an item's width in a numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Yield",
+                "Definition": "Represents the amount of product produced from a specific process or batch.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+166",
+                "Definition": "This column likely stores a large numeric value as a string, possibly representing a unique identifier or code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E4664",
+                "Definition": "A unique identifier for an inventory item, stored as a string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+65",
+                "Definition": "This column likely stores large numerical values in string format, possibly for identification or reference purposes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1863",
+                "Definition": "A unique identifier for a specific inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1006",
+                "Definition": "A variable character field used to store alphanumeric data.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E577",
+                "Definition": "This column stores alphanumeric data, possibly representing a unique identifier or code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1839",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E860",
+                "Definition": "A unique identifier for an inventory item, stored as a variable-length string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E357",
+                "Definition": "This column stores alphanumeric values, likely representing a unique identifier or reference code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1247",
+                "Definition": "This column likely stores a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1883",
+                "Definition": "Represents a unique identifier or reference code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+170",
+                "Definition": "This column likely stores large numeric values in string format, possibly for special cases or scientific notation.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor account",
+                "Definition": "Identifier for the vendor associated with inventory items.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor tag #",
+                "Definition": "A unique identifier assigned to each vendor for tracking purposes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Best before date",
+                "Definition": "Indicates the date by which the item should be consumed for optimal quality.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Expiration date",
+                "Definition": "Represents the date and time when an item is no longer usable or valid.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Production date",
+                "Definition": "Indicates the date and time when the production occurred.",
+                "SampleValues": []
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "A tracking parameter used to identify and monitor specific instances of items in inventory.",
+        "Entity": "Tag",
+        "EntityName": "Tag",
+        "EntityRelationships": [],
+        "Warehouse": null
+    }
+]

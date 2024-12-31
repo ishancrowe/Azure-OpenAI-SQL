@@ -1,0 +1,4052 @@
+[
+    {
+        "Columns": [
+            {
+                "DataType": "int",
+                "Name": "Date key",
+                "Definition": "Date keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    20250113,
+                    20250118,
+                    20250119
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Date",
+                "Definition": "Represents a specific calendar date associated with the inventory record.",
+                "SampleValues": [
+                    "2025-01-20",
+                    "2025-02-07",
+                    "2025-02-22"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Balance type",
+                "Definition": "Indicates the classification of the balance, such as debit or credit.",
+                "SampleValues": [
+                    "Most recent",
+                    "Day end",
+                    "Month end"
+                ]
+            },
+            {
+                "DataType": "datetime",
+                "Name": "Month",
+                "Definition": "Represents the specific month and year for inventory records.",
+                "SampleValues": [
+                    "Jun  1 2025 12:00AM",
+                    "Jun  1 2016 12:00AM",
+                    "Mar  1 2019 12:00AM"
+                ]
+            },
+            {
+                "DataType": "datetime",
+                "Name": "Month abbr",
+                "Definition": "Represents the abbreviated name of the month in a date format.",
+                "SampleValues": [
+                    "Jun  1 2025 12:00AM",
+                    "Jun  1 2016 12:00AM",
+                    "Mar  1 2019 12:00AM"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Month of year #",
+                "Definition": "Represents the month in numerical format, ranging from 1 to 12.",
+                "SampleValues": [
+                    1,
+                    11,
+                    3
+                ]
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Month of year",
+                "Definition": "Represents the month in a year as a string value.",
+                "SampleValues": [
+                    "Nov",
+                    "Dec",
+                    "Oct"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quarter",
+                "Definition": "Represents the fiscal quarter of the year in string format.",
+                "SampleValues": [
+                    "FY 2012 Q1",
+                    "FY 2012 Q2",
+                    "FY 2012 Q3"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quarter of year",
+                "Definition": "Represents the fiscal quarter in which an inventory transaction occurs.",
+                "SampleValues": [
+                    "FQ3",
+                    "FQ2",
+                    "FQ4"
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Relative day",
+                "Definition": "Indicates a specific day relative to a reference date.",
+                "SampleValues": [
+                    "2025-01-20",
+                    "2025-02-07",
+                    "2025-02-22"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Relative day #",
+                "Definition": "Indicates the day number relative to a specific reference date.",
+                "SampleValues": [
+                    18,
+                    33,
+                    43
+                ]
+            },
+            {
+                "DataType": "datetime",
+                "Name": "Relative month",
+                "Definition": "Indicates the month relative to a specific date for reporting purposes.",
+                "SampleValues": [
+                    "Jun  1 2025 12:00AM",
+                    "Jun  1 2016 12:00AM",
+                    "Mar  1 2019 12:00AM"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Relative month #",
+                "Definition": "Indicates the month relative to a reference date, represented as an integer.",
+                "SampleValues": [
+                    -8.0,
+                    0,
+                    -7.0
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Relative week",
+                "Definition": "Indicates the specific week relative to a defined time period.",
+                "SampleValues": [
+                    "2025-03-30",
+                    "2025-07-27",
+                    "2026-01-11"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Relative week #",
+                "Definition": "Indicates the week number relative to a specified reference date.",
+                "SampleValues": [
+                    18,
+                    33,
+                    43
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Relative year",
+                "Definition": "Indicates the year relative to a specific reference point, stored as a string.",
+                "SampleValues": [
+                    "FY 2021",
+                    "FY 2017",
+                    "FY 2012"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Relative year #",
+                "Definition": "Indicates the year relative to a specific reference point in time.",
+                "SampleValues": [
+                    0,
+                    -99999.0,
+                    1
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Week",
+                "Definition": "Represents the date corresponding to a specific week in the inventory tracking system.",
+                "SampleValues": [
+                    "2025-03-30",
+                    "2025-07-27",
+                    "2026-01-11"
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Week abbr",
+                "Definition": "Abbreviated representation of the week, typically used for reporting or scheduling purposes.",
+                "SampleValues": [
+                    "2025-03-30",
+                    "2025-07-27",
+                    "2026-01-11"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Week of year #",
+                "Definition": "Represents the week number within the year for inventory tracking purposes.",
+                "SampleValues": [
+                    18,
+                    33,
+                    43
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Year",
+                "Definition": "Represents the year in string format for inventory records.",
+                "SampleValues": [
+                    "FY 2021",
+                    "FY 2017",
+                    "FY 2012"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Represents specific points in time for tracking transactions or events.",
+        "Entity": "Date",
+        "EntityName": "Date",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Inventory aging bucket key",
+                "Definition": "Inventory aging bucket keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    43
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory age 30-60-90",
+                "Definition": "Represents the age of inventory items categorized into 30, 60, and 90-day intervals.",
+                "SampleValues": [
+                    "Current",
+                    "61-90",
+                    "Paid"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory age 30-60-90 sort",
+                "Definition": "Represents the categorization of inventory age into 30, 60, or 90-day intervals.",
+                "SampleValues": [
+                    1,
+                    31
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory age 30-60-90-120",
+                "Definition": "Represents the duration items have been in inventory, categorized into 30, 60, 90, and 120 days.",
+                "SampleValues": [
+                    "> 120",
+                    "Current",
+                    "91-120"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory age 30-60-90-120 sort",
+                "Definition": "Indicates the quantity of inventory aged between specified timeframes in days.",
+                "SampleValues": [
+                    1,
+                    31
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory age 1M-3M-6M-12M-24M",
+                "Definition": "Represents the duration items have been in inventory, categorized by specific time frames.",
+                "SampleValues": [
+                    "1M",
+                    "> 24M",
+                    "12-24M"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory age 1M-3M-6M-12M-24M sort",
+                "Definition": "Represents the sorted inventory age in months, categorizing items based on their age.",
+                "SampleValues": [
+                    181,
+                    730
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory age 30-90-180-360-540-720",
+                "Definition": "Represents the age of inventory items categorized into specified time ranges.",
+                "SampleValues": [
+                    "361-540",
+                    "Current",
+                    "31-90"
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory age 30-90-180-360-540-720 sort",
+                "Definition": "Represents the age of inventory in specified time ranges for sorting purposes.",
+                "SampleValues": [
+                    181,
+                    1
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory age days",
+                "Definition": "Number of days an item has been in inventory.",
+                "SampleValues": [
+                    0,
+                    18,
+                    33
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Categorizes inventory based on the duration items have been held in stock.",
+        "Entity": "Inventory age bucket",
+        "EntityName": "Inventory age bucket",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Inventory on-hand key",
+                "Definition": "Inventory on-hand keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    211,
+                    255
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Aging master tag key",
+                "Definition": "Aging master tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    612,
+                    544,
+                    677
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Aging tag key",
+                "Definition": "Aging tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    663,
+                    612,
+                    544
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Latest warehouse key",
+                "Definition": "Latest warehouse keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    45,
+                    26,
+                    41
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Latest warehouse location key",
+                "Definition": "Latest warehouse location keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    68,
+                    186,
+                    340
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Legal entity key",
+                "Definition": "Legal entity keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "License plate key",
+                "Definition": "License plate keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    68
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Inventory source key",
+                "Definition": "Inventory source keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    0,
+                    36,
+                    19
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Inventory trans status key",
+                "Definition": "Inventory trans status keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    0,
+                    11,
+                    1
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Master product key",
+                "Definition": "Master product keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1514,
+                    1785,
+                    1973
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Master tag key",
+                "Definition": "Master tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    33,
+                    68,
+                    118
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Parent tag product key",
+                "Definition": "Parent tag product keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    5143,
+                    5144,
+                    5169
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Parent tag key",
+                "Definition": "Parent tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    33,
+                    118,
+                    204
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Product key",
+                "Definition": "Product keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    510,
+                    1462,
+                    1539
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Purchase order line key",
+                "Definition": "Purchase order line keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    68
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Received date key",
+                "Definition": "Received date keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    20220722,
+                    20200218,
+                    20191104
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Sales order line key",
+                "Definition": "Sales order line keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    43,
+                    153
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Site key",
+                "Definition": "Site keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1,
+                    3,
+                    4
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Tag key",
+                "Definition": "Tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    43
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Costing UOM key",
+                "Definition": "Costing UOM keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    13,
+                    1,
+                    3
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "Vendor keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    19
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Warehouse key",
+                "Definition": "Warehouse keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    13,
+                    45,
+                    47
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Warehouse location key",
+                "Definition": "Warehouse location keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    68,
+                    18,
+                    186
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Average unit cost",
+                "Definition": "Represents the average cost of a single unit of inventory item.",
+                "SampleValues": [
+                    0.0,
+                    6.7958,
+                    84.94
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Arrived quantity",
+                "Definition": "Represents the quantity of items received into inventory.",
+                "SampleValues": [
+                    0.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived FT",
+                "Definition": "Represents the quantity of items that have arrived in full.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived IN",
+                "Definition": "Represents the quantity of items that have arrived in inventory.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived LB",
+                "Definition": "Weight of items received, measured in pounds.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived CWT",
+                "Definition": "Weight of items that have arrived, measured in hundredweights.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived TON",
+                "Definition": "Represents the weight of items that have arrived, measured in tons.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Arrived PC",
+                "Definition": "Represents the quantity of arrived items in pieces.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Arrived SQIN",
+                "Definition": "Represents the quantity of items that have arrived in stock.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Available physical quantity",
+                "Definition": "Represents the current stock level of an item in inventory.",
+                "SampleValues": [
+                    0.0,
+                    21880.0,
+                    1935.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical FT",
+                "Definition": "Represents the quantity of physically available inventory in full-time units.",
+                "SampleValues": [
+                    0,
+                    -240.0,
+                    2
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical IN",
+                "Definition": "Represents the quantity of items physically available in inventory.",
+                "SampleValues": [
+                    0,
+                    -2400.0,
+                    29400
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical PC",
+                "Definition": "Represents the quantity of physical items available in stock.",
+                "SampleValues": [
+                    0,
+                    1441,
+                    6
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Available physical SQIN",
+                "Definition": "Represents the quantity of items available in physical stock.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical LB",
+                "Definition": "Represents the quantity of inventory available in pounds.",
+                "SampleValues": [
+                    0,
+                    -103117.0,
+                    2450.3
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical CWT",
+                "Definition": "Represents the available weight of inventory in hundredweight (CWT).",
+                "SampleValues": [
+                    0,
+                    -1.99495,
+                    6.68225
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Available physical TON",
+                "Definition": "Represents the quantity of inventory available in tons.",
+                "SampleValues": [
+                    0,
+                    45.9749,
+                    17.1521
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Days in inventory",
+                "Definition": "Represents the number of days an item has been held in inventory.",
+                "SampleValues": [
+                    0,
+                    1879,
+                    1872
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Deducted quantity",
+                "Definition": "Represents the amount of inventory removed from stock.",
+                "SampleValues": [
+                    0.0,
+                    155.0,
+                    51.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted FT",
+                "Definition": "Represents the amount deducted from the full total in float format.",
+                "SampleValues": [
+                    0,
+                    55,
+                    400
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted IN",
+                "Definition": "Represents the quantity deducted from inventory, measured as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    960,
+                    420
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted PC",
+                "Definition": "Represents the amount deducted from the total, expressed as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    2,
+                    6
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Deducted SQIN",
+                "Definition": "Represents the quantity of items removed from inventory.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted LB",
+                "Definition": "Represents the weight in pounds that has been deducted from inventory.",
+                "SampleValues": [
+                    0,
+                    4577,
+                    37400
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted CWT",
+                "Definition": "Represents the weight deduction in hundredweight for inventory items.",
+                "SampleValues": [
+                    0,
+                    149.99,
+                    125
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Deducted TON",
+                "Definition": "Represents the amount in tons deducted from inventory or stock levels.",
+                "SampleValues": [
+                    0,
+                    0.00178193,
+                    4.72694
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Financial cost",
+                "Definition": "Represents the monetary expense associated with acquiring or maintaining inventory items.",
+                "SampleValues": [
+                    0.0,
+                    84.94,
+                    -53.46
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory count",
+                "Definition": "Represents the quantity of items available in inventory.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Marked quantity",
+                "Definition": "Represents the quantity of items designated for a specific purpose or status.",
+                "SampleValues": [
+                    0.0,
+                    4550.0,
+                    51.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked FT",
+                "Definition": "Indicates the marked value of an item, represented as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    200,
+                    3500
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked IN",
+                "Definition": "Represents the quantity of items marked as received in inventory.",
+                "SampleValues": [
+                    0,
+                    3600,
+                    9600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked PC",
+                "Definition": "Represents the marked price of an item as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    27,
+                    125
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Marked SQIN",
+                "Definition": "Indicates a specific quantity of items marked for tracking or processing.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked LB",
+                "Definition": "Represents the weight of an item in pounds, allowing for decimal values.",
+                "SampleValues": [
+                    0,
+                    26950,
+                    0.004
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked CWT",
+                "Definition": "Represents the marked weight of an item in hundredweight.",
+                "SampleValues": [
+                    0,
+                    17.2286,
+                    2454.12
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Marked TON",
+                "Definition": "Represents the weight of marked items in tons.",
+                "SampleValues": [
+                    0,
+                    3.98811,
+                    2
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Inventory cost",
+                "Definition": "Represents the monetary value associated with acquiring and maintaining inventory items.",
+                "SampleValues": [
+                    0.0,
+                    84.94,
+                    32.26
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Inventory unit cost",
+                "Definition": "Represents the cost of a single unit of inventory item.",
+                "SampleValues": [
+                    0.0,
+                    6.7958,
+                    84.94
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Inventory quantity",
+                "Definition": "Represents the amount of inventory available for a specific item.",
+                "SampleValues": [
+                    0.0,
+                    21880.0,
+                    1935.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory FT",
+                "Definition": "Represents the quantity of inventory in floating-point numeric format.",
+                "SampleValues": [
+                    0,
+                    2,
+                    55
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory IN",
+                "Definition": "Represents the quantity of items added to inventory.",
+                "SampleValues": [
+                    0,
+                    29400,
+                    3600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory PC",
+                "Definition": "Represents the quantity of inventory items in pieces as a decimal number.",
+                "SampleValues": [
+                    0,
+                    1441,
+                    6
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory SQIN",
+                "Definition": "Represents a unique identifier for inventory items in the system.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory LB",
+                "Definition": "Represents the weight of inventory items in pounds.",
+                "SampleValues": [
+                    0,
+                    2450.3,
+                    7957.71
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory CWT",
+                "Definition": "Represents the weight of inventory items in hundredweight.",
+                "SampleValues": [
+                    0,
+                    6.68225,
+                    173.47
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Inventory TON",
+                "Definition": "Represents the total weight of inventory items measured in tons.",
+                "SampleValues": [
+                    0,
+                    45.9749,
+                    17.1521
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Is closed",
+                "Definition": "Indicates whether an item or process is finalized or still active.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Is closed quantity",
+                "Definition": "Indicates the quantity of items that are closed or finalized in inventory.",
+                "SampleValues": [
+                    0,
+                    1
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "On-order quantity",
+                "Definition": "Represents the quantity of items that have been ordered but not yet received.",
+                "SampleValues": [
+                    0.0,
+                    51.0,
+                    15500.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order FT",
+                "Definition": "Represents the quantity of items currently on order, expressed as a decimal number.",
+                "SampleValues": [
+                    0,
+                    3600,
+                    14140
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order IN",
+                "Definition": "Represents the quantity of items currently on order, measured in floating-point numbers.",
+                "SampleValues": [
+                    0,
+                    12,
+                    1800
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order PC",
+                "Definition": "Represents the quantity of items currently on order in decimal format.",
+                "SampleValues": [
+                    0,
+                    2,
+                    110
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "On-order SQIN",
+                "Definition": "Quantity of items currently ordered but not yet received.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order LB",
+                "Definition": "Represents the quantity of items ordered but not yet received, measured in pounds.",
+                "SampleValues": [
+                    0,
+                    148801,
+                    249.961
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order CWT",
+                "Definition": "Represents the weight in hundredweight of items currently on order.",
+                "SampleValues": [
+                    0,
+                    239.287,
+                    370.009
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "On-order TON",
+                "Definition": "Represents the total weight of items ordered, measured in tons.",
+                "SampleValues": [
+                    136.29,
+                    0,
+                    2.44049
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Ordered quantity",
+                "Definition": "Represents the quantity of items requested in a purchase order.",
+                "SampleValues": [
+                    0.0,
+                    4550.0,
+                    124.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered FT",
+                "Definition": "Represents the quantity of items ordered in floating-point format.",
+                "SampleValues": [
+                    0,
+                    28500,
+                    200
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered IN",
+                "Definition": "Represents the quantity of items ordered, expressed as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    3600,
+                    9600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered PC",
+                "Definition": "Represents the quantity of items ordered, expressed as a decimal number.",
+                "SampleValues": [
+                    0,
+                    125,
+                    2
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Ordered SQIN",
+                "Definition": "Represents the quantity of items ordered in square inches.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered LB",
+                "Definition": "Represents the total weight of items ordered in pounds.",
+                "SampleValues": [
+                    0,
+                    70500,
+                    13524
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered CWT",
+                "Definition": "Represents the weight in hundredweight of items ordered.",
+                "SampleValues": [
+                    0,
+                    20.4191,
+                    135.24
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered TON",
+                "Definition": "Represents the quantity of items ordered in tons, allowing for decimal values.",
+                "SampleValues": [
+                    0,
+                    3.98811,
+                    10.2096
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Ordered reserved quantity",
+                "Definition": "Represents the quantity of items reserved for a specific order, allowing for decimal values.",
+                "SampleValues": [
+                    0.0,
+                    4550.0,
+                    4500.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved FT",
+                "Definition": "Represents the float value of inventory ordered but not yet delivered.",
+                "SampleValues": [
+                    0,
+                    200,
+                    420
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved IN",
+                "Definition": "Represents the quantity of items reserved for incoming orders.",
+                "SampleValues": [
+                    0,
+                    3600,
+                    9600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved PC",
+                "Definition": "Represents the quantity of items reserved for an order in decimal format.",
+                "SampleValues": [
+                    0,
+                    6,
+                    2
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Ordered reserved SQIN",
+                "Definition": "Represents the quantity of items reserved for an order in stock-keeping units.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved LB",
+                "Definition": "Represents the quantity of reserved items ordered, measured in pounds.",
+                "SampleValues": [
+                    0,
+                    10501,
+                    765.717
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved CWT",
+                "Definition": "Represents the weight in hundredweight reserved for ordered items.",
+                "SampleValues": [
+                    0,
+                    10.2096,
+                    3.98811
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Ordered reserved TON",
+                "Definition": "Represents the quantity of reserved items ordered, measured in tons.",
+                "SampleValues": [
+                    0,
+                    0.0976855,
+                    3.98811
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Physical cost",
+                "Definition": "Represents the monetary value of an item based on physical inventory.",
+                "SampleValues": [
+                    0.0,
+                    -3058.31,
+                    10545.0
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Physical inventory quantity",
+                "Definition": "Represents the actual count of items available in inventory, measured in decimal format.",
+                "SampleValues": [
+                    0.0,
+                    21880.0,
+                    1935.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory FT",
+                "Definition": "Represents the actual quantity of items in stock, measured as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    2,
+                    55
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory IN",
+                "Definition": "Represents the quantity of items added to inventory, measured in a decimal format.",
+                "SampleValues": [
+                    0,
+                    29400,
+                    3600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory PC",
+                "Definition": "Represents the quantity of physical inventory in units, measured as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    1441,
+                    6
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Physical inventory SQIN",
+                "Definition": "Represents the unique identifier for a physical inventory instance.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory LB",
+                "Definition": "Represents the weight of inventory items in pounds.",
+                "SampleValues": [
+                    0,
+                    2450.3,
+                    7957.71
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory CWT",
+                "Definition": "Represents the weight of physical inventory in hundredweight units.",
+                "SampleValues": [
+                    0,
+                    6.68225,
+                    173.47
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical inventory TON",
+                "Definition": "Represents the total weight of inventory measured in tons.",
+                "SampleValues": [
+                    0,
+                    45.9749,
+                    17.1521
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Physical reserved quantity",
+                "Definition": "Represents the quantity of inventory set aside for specific purposes or orders.",
+                "SampleValues": [
+                    0.0,
+                    104.0,
+                    155.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved FT",
+                "Definition": "Represents the quantity of inventory physically reserved for future use.",
+                "SampleValues": [
+                    0,
+                    200,
+                    3500
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved IN",
+                "Definition": "Represents the quantity of items reserved for physical inventory.",
+                "SampleValues": [
+                    0,
+                    8640,
+                    6720
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved PC",
+                "Definition": "Represents the quantity of inventory physically reserved in a specific location.",
+                "SampleValues": [
+                    0,
+                    21,
+                    3824
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Physical reserved SQIN",
+                "Definition": "Represents the quantity of inventory physically reserved for specific transactions or orders.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved LB",
+                "Definition": "Represents the quantity of inventory physically reserved in pounds.",
+                "SampleValues": [
+                    0,
+                    26950,
+                    0.004
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved CWT",
+                "Definition": "Represents the quantity of inventory physically reserved, measured in hundredweight (CWT).",
+                "SampleValues": [
+                    0,
+                    2440.09,
+                    397.88
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Physical reserved TON",
+                "Definition": "Represents the total weight in tons reserved for inventory items.",
+                "SampleValues": [
+                    0,
+                    0.146528,
+                    2
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Picked quantity",
+                "Definition": "Represents the quantity of items selected for an order or shipment.",
+                "SampleValues": [
+                    0.0,
+                    51216.0,
+                    50128.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked FT",
+                "Definition": "Represents the quantity of items picked in full-time units.",
+                "SampleValues": [
+                    0,
+                    150,
+                    264.667
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked IN",
+                "Definition": "Represents the quantity of items picked for processing or shipment.",
+                "SampleValues": [
+                    0,
+                    1800,
+                    180000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked PC",
+                "Definition": "Represents the quantity of picked items in decimal format.",
+                "SampleValues": [
+                    0,
+                    2,
+                    27
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Picked SQIN",
+                "Definition": "Represents the quantity of items picked from inventory.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked LB",
+                "Definition": "Represents the weight of picked items in pounds.",
+                "SampleValues": [
+                    0,
+                    2807.63,
+                    1212.39
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked CWT",
+                "Definition": "Represents the weight in hundredweight of items picked for orders.",
+                "SampleValues": [
+                    0,
+                    125,
+                    2.48149
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Picked TON",
+                "Definition": "Represents the weight of items picked, measured in tons.",
+                "SampleValues": [
+                    0,
+                    1.14,
+                    1.40382
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Posted quantity",
+                "Definition": "Represents the quantity of items that have been officially recorded in the inventory system.",
+                "SampleValues": [
+                    0.0,
+                    21880.0,
+                    1935.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted FT",
+                "Definition": "Represents the posted financial transaction amount.",
+                "SampleValues": [
+                    0,
+                    2,
+                    55
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted IN",
+                "Definition": "Represents the amount or value assigned to an inventory item in a specific location.",
+                "SampleValues": [
+                    0,
+                    29400,
+                    3600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted PC",
+                "Definition": "Represents the posted price per unit of an item in the inventory.",
+                "SampleValues": [
+                    0,
+                    6,
+                    2
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Posted SQIN",
+                "Definition": "Indicates the quantity of items posted in the system.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted LB",
+                "Definition": "Represents the weight of inventory items in pounds.",
+                "SampleValues": [
+                    0,
+                    7957.71,
+                    26950
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted CWT",
+                "Definition": "Represents the total weight of items posted, measured in hundredweight.",
+                "SampleValues": [
+                    0,
+                    6.68225,
+                    173.47
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Posted TON",
+                "Definition": "Represents the total weight of items posted in tons.",
+                "SampleValues": [
+                    0,
+                    17.1521,
+                    0.00178193
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Quote issue quantity",
+                "Definition": "Represents the quantity of items specified in a quote, measured as a decimal value.",
+                "SampleValues": [
+                    0.0,
+                    634.0,
+                    175.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue FT",
+                "Definition": "Represents the financial value of a quote issued, measured in floating-point numbers.",
+                "SampleValues": [
+                    0,
+                    5600,
+                    800
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue IN",
+                "Definition": "Represents the quantity of items issued from a quote in decimal format.",
+                "SampleValues": [
+                    0,
+                    9600,
+                    240
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue PC",
+                "Definition": "Represents the price calculation related to a specific quote.",
+                "SampleValues": [
+                    0,
+                    110,
+                    125
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Quote issue SQIN",
+                "Definition": "Represents a sequential identifier for issued quotes in the system.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue LB",
+                "Definition": "Represents the weight in pounds for a quoted item.",
+                "SampleValues": [
+                    0,
+                    11023.1,
+                    333200
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue CWT",
+                "Definition": "Represents the weight in hundredweight associated with a quote.",
+                "SampleValues": [
+                    0,
+                    404.554,
+                    70.1908
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote issue TON",
+                "Definition": "Represents the weight of the quote in tons as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    3.50954,
+                    3.98811
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Quote receipt quantity",
+                "Definition": "Represents the quantity of items received as per the quote.",
+                "SampleValues": [
+                    0.0,
+                    200.0,
+                    200000.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt FT",
+                "Definition": "Represents the total amount received from a quote in floating-point format.",
+                "SampleValues": [
+                    0,
+                    20000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt IN",
+                "Definition": "Represents the monetary amount received from a quote, expressed as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    240000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt PC",
+                "Definition": "Represents the monetary value associated with a quote receipt in decimal format.",
+                "SampleValues": [
+                    0,
+                    200,
+                    10000
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Quote receipt SQIN",
+                "Definition": "Represents a unique identifier for the quote receipt in the inventory system.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt LB",
+                "Definition": "Represents the weight of the quote receipt in pounds.",
+                "SampleValues": [
+                    0,
+                    638098,
+                    16909.6
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt CWT",
+                "Definition": "Represents the weight of the quote receipt in hundredweight units.",
+                "SampleValues": [
+                    0,
+                    374.351,
+                    6380.98
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Quote receipt TON",
+                "Definition": "Represents the weight in tons of the quoted receipt.",
+                "SampleValues": [
+                    0,
+                    68.0638,
+                    8.4548
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Received quantity",
+                "Definition": "Represents the amount of items received in decimal format.",
+                "SampleValues": [
+                    0.0,
+                    18142.0,
+                    2533.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received FT",
+                "Definition": "Represents the quantity of items received in full transactions.",
+                "SampleValues": [
+                    0,
+                    55,
+                    420
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received IN",
+                "Definition": "Represents the quantity of items received into inventory.",
+                "SampleValues": [
+                    0,
+                    2700,
+                    504000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received PC",
+                "Definition": "Represents the quantity of items received, measured in pieces.",
+                "SampleValues": [
+                    0,
+                    6,
+                    2
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Received SQIN",
+                "Definition": "Indicates the quantity of items received in a specific transaction.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received LB",
+                "Definition": "Represents the weight of received items in pounds.",
+                "SampleValues": [
+                    0,
+                    4577,
+                    29559
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received CWT",
+                "Definition": "Represents the weight in hundredweight of received inventory items.",
+                "SampleValues": [
+                    0,
+                    125,
+                    5.565
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Received TON",
+                "Definition": "Represents the weight of received inventory items in tons.",
+                "SampleValues": [
+                    0,
+                    8.625,
+                    19.9981
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Registered quantity",
+                "Definition": "Represents the total amount of items officially recorded in inventory.",
+                "SampleValues": [
+                    0.0,
+                    45000.0,
+                    10800.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered FT",
+                "Definition": "Represents the registered full-time inventory quantity as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    3000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered IN",
+                "Definition": "Indicates the amount of inventory registered in a specific location or facility.",
+                "SampleValues": [
+                    0,
+                    36000
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered PC",
+                "Definition": "Represents the quantity of registered PCs in inventory.",
+                "SampleValues": [
+                    0,
+                    2,
+                    1
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Registered SQIN",
+                "Definition": "Indicates the quantity of registered items in stock.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered LB",
+                "Definition": "Represents the registered weight of an item in pounds.",
+                "SampleValues": [
+                    0,
+                    50293,
+                    39683.2
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered CWT",
+                "Definition": "Represents the registered weight of an item in hundredweight.",
+                "SampleValues": [
+                    0,
+                    10.603,
+                    200
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Registered TON",
+                "Definition": "Represents the weight of an item in tons, recorded as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    0.0146174,
+                    200
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Total available quantity",
+                "Definition": "Represents the total quantity of items available for sale or use.",
+                "SampleValues": [
+                    -51.0,
+                    0.0,
+                    52.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available FT",
+                "Definition": "Represents the total quantity of available inventory in full-time units.",
+                "SampleValues": [
+                    -0.0,
+                    -50.0,
+                    -240.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available IN",
+                "Definition": "Represents the total quantity of items available for inventory.",
+                "SampleValues": [
+                    -0.0,
+                    -240.0,
+                    -2400.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available PC",
+                "Definition": "Represents the total quantity of available personal computers in inventory.",
+                "SampleValues": [
+                    -0.0,
+                    1441,
+                    6
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Total available SQIN",
+                "Definition": "Represents the total quantity of available square inches of inventory.",
+                "SampleValues": [
+                    0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available LB",
+                "Definition": "Represents the total weight in pounds available for inventory.",
+                "SampleValues": [
+                    -10464.8,
+                    0,
+                    2450.3
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available CWT",
+                "Definition": "Represents the total available weight in hundredweight for inventory items.",
+                "SampleValues": [
+                    0,
+                    -0.00746429,
+                    173.47
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Total available TON",
+                "Definition": "Represents the total quantity of inventory available in tons.",
+                "SampleValues": [
+                    0,
+                    8.6735,
+                    1.1145
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Master tag age",
+                "Definition": "Represents the age of the master tag in days.",
+                "SampleValues": [
+                    1879,
+                    1872,
+                    1785
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Tag age",
+                "Definition": "Represents the duration an item tag has been active in days.",
+                "SampleValues": [
+                    1879,
+                    1872,
+                    1785
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Last expected update date",
+                "Definition": "Indicates the anticipated date and time for the next update of the record.",
+                "SampleValues": [
+                    "2022-08-23 00:00:00.0000000",
+                    "2019-10-18 00:00:00.0000000",
+                    "2019-12-17 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Last physical update date",
+                "Definition": "Indicates the most recent date and time of physical inventory updates.",
+                "SampleValues": [
+                    "2019-10-18 00:00:00.0000000",
+                    "2019-12-17 00:00:00.0000000",
+                    "2020-03-11 00:00:00.0000000"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Records current quantities of items available in stock.",
+        "Entity": "Inventory on-hand fact",
+        "EntityName": "Inventory on-hand fact",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "int",
+                "Name": "Usage date key",
+                "Definition": "Usage date keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    20210223,
+                    20220502,
+                    20231128
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Product key",
+                "Definition": "Product keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1564,
+                    43,
+                    93
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Legal entity key",
+                "Definition": "Legal entity keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Inventory usage count",
+                "Definition": "Represents the total number of times inventory items have been utilized.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Sales usage cost",
+                "Definition": "Represents the cost associated with the usage of inventory for sales purposes.",
+                "SampleValues": [
+                    0.0,
+                    -1787.73,
+                    -2.81
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Sales usage",
+                "Definition": "Represents the quantity of items sold over a specific period.",
+                "SampleValues": [
+                    18990.834,
+                    51.0,
+                    155.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage FT",
+                "Definition": "Represents the float value of sales usage in full-time equivalents.",
+                "SampleValues": [
+                    0,
+                    3600,
+                    200
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage IN",
+                "Definition": "Represents the quantity of items used in sales transactions, measured as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    12,
+                    3600
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage PC",
+                "Definition": "Represents the usage of sales per unit in decimal format.",
+                "SampleValues": [
+                    2,
+                    0,
+                    170
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage LB",
+                "Definition": "Represents the quantity of sales usage measured in pounds.",
+                "SampleValues": [
+                    0,
+                    20163.9,
+                    9890.52
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage CWT",
+                "Definition": "Represents the sales usage measured in hundredweight for inventory items.",
+                "SampleValues": [
+                    0,
+                    -6.10126,
+                    268.001
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage TON",
+                "Definition": "Represents the quantity of sales measured in tons.",
+                "SampleValues": [
+                    0,
+                    9.49542,
+                    1.22107
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Sales usage SQIN",
+                "Definition": "Represents the quantity of sales usage in square inches.",
+                "SampleValues": [
+                    0,
+                    7718400.0,
+                    288000
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Shipment usage cost",
+                "Definition": "Cost associated with the usage of shipped items, represented as a decimal value.",
+                "SampleValues": [
+                    0.0,
+                    -1787.73,
+                    -2.81
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Shipment usage",
+                "Definition": "Represents the quantity of items used from a shipment, measured in decimal format.",
+                "SampleValues": [
+                    18990.834,
+                    4500.0,
+                    24078.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage FT",
+                "Definition": "Represents the quantity of shipment utilized, measured in floating-point numbers.",
+                "SampleValues": [
+                    0,
+                    70,
+                    240
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage IN",
+                "Definition": "Represents the quantity of inventory received during a shipment, measured in a floating-point number.",
+                "SampleValues": [
+                    0,
+                    1680
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage PC",
+                "Definition": "Represents the quantity of product consumed during a shipment, measured as a decimal value.",
+                "SampleValues": [
+                    2,
+                    0,
+                    48
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage LB",
+                "Definition": "Represents the weight of shipment usage in pounds as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    7500,
+                    29559
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage CWT",
+                "Definition": "Represents the weight of the shipment in hundredweight.",
+                "SampleValues": [
+                    0,
+                    707.743,
+                    0.257813
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage TON",
+                "Definition": "Represents the weight in tons used during shipment.",
+                "SampleValues": [
+                    0,
+                    9.49542,
+                    1.22107
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Shipment usage SQIN",
+                "Definition": "Represents the quantity of shipment usage measured as a floating-point number.",
+                "SampleValues": [
+                    0,
+                    4949,
+                    294
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Production usage cost",
+                "Definition": "Represents the cost associated with the usage of production resources in decimal format.",
+                "SampleValues": [
+                    0.0,
+                    84.94,
+                    -13376.0
+                ]
+            },
+            {
+                "DataType": "decimal",
+                "Name": "Production usage",
+                "Definition": "Represents the quantity of materials consumed during the production process.",
+                "SampleValues": [
+                    266.66667,
+                    15500.0,
+                    -4306.0
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage FT",
+                "Definition": "Represents the float value of production material usage in full-time equivalents.",
+                "SampleValues": [
+                    0,
+                    17640,
+                    55
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage IN",
+                "Definition": "Represents the quantity of materials consumed in production processes.",
+                "SampleValues": [
+                    0,
+                    9600,
+                    211680
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage PC",
+                "Definition": "Represents the quantity of production materials used per production cycle.",
+                "SampleValues": [
+                    0,
+                    2,
+                    1657
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage LB",
+                "Definition": "Represents the weight in pounds used in production processes.",
+                "SampleValues": [
+                    0,
+                    3700,
+                    -30356.8
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage CWT",
+                "Definition": "Represents the weight of production materials used, measured in hundredweight.",
+                "SampleValues": [
+                    0,
+                    107.2,
+                    0.15
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage TON",
+                "Definition": "Represents the quantity of material used in production, measured in tons.",
+                "SampleValues": [
+                    0,
+                    0.146528,
+                    0.883584
+                ]
+            },
+            {
+                "DataType": "float",
+                "Name": "Production usage SQIN",
+                "Definition": "Represents the quantity of production material used, measured in square inches.",
+                "SampleValues": [
+                    0,
+                    288000,
+                    -2014.8
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Records detailed information about inventory consumption and transactions over time.",
+        "Entity": "Inventory usage fact",
+        "EntityName": "Inventory usage fact",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Legal entity key",
+                "Definition": "Legal entity keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1,
+                    3,
+                    2
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Legal entity",
+                "Definition": "Represents the organization or business unit responsible for transactions and inventory management.",
+                "SampleValues": [
+                    "CMC",
+                    "CMA",
+                    "CSSC"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Legal entity name",
+                "Definition": "Represents the official name of the legal entity involved in transactions.",
+                "SampleValues": [
+                    "Crowe Metals - Canada",
+                    "Crowe Steel Service Center",
+                    "Crowe Metals USA"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Legal entity desc",
+                "Definition": "Description of the legal entity associated with the inventory item.",
+                "SampleValues": [
+                    "CMA - Crowe Metals USA",
+                    "CSSC - Crowe Steel Service Center",
+                    "CMC - Crowe Metals - Canada"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Accounting currency",
+                "Definition": "Represents the currency used for financial transactions and reporting.",
+                "SampleValues": [
+                    "CAD",
+                    "USD"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Balance exchange rate type",
+                "Definition": "Indicates the type of exchange rate used for balance calculations.",
+                "SampleValues": [
+                    "Closing"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Chart of accounts",
+                "Definition": "A list of accounts used for financial reporting and tracking.",
+                "SampleValues": [
+                    "Standard"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Ledger",
+                "Definition": "A string representing the accounting ledger associated with the inventory item.",
+                "SampleValues": [
+                    "CMC",
+                    "CMA",
+                    "CSSC"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Time zone",
+                "Definition": "Represents the geographical region's standard time offset from Coordinated Universal Time (UTC).",
+                "SampleValues": [
+                    "UTC"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Trans exchange rate type",
+                "Definition": "Indicates the type of exchange rate applied to the transaction.",
+                "SampleValues": [
+                    "Default"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "An organization recognized by law, capable of entering contracts and owning assets.",
+        "Entity": "Legal entity",
+        "EntityName": "Legal entity",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Tag key",
+                "Definition": "Tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    2534,
+                    93,
+                    2006
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "Vendor keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    33,
+                    18,
+                    19
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Manufacturing date key",
+                "Definition": "Manufacturing date keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    20240223,
+                    20210811,
+                    20230327
+                ]
+            },
+            {
+                "DataType": "smallint",
+                "Name": "Tags",
+                "Definition": "Represents a numerical identifier for tracking parameters associated with inventory items.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag #",
+                "Definition": "A unique identifier used to track specific instances of items in inventory.",
+                "SampleValues": [
+                    "-001",
+                    "<multiple>-001"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Item #",
+                "Definition": "Unique identifier for each inventory item, stored as a string.",
+                "SampleValues": [
+                    "C012",
+                    "3105IHS",
+                    "S023"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Heat #",
+                "Definition": "Identifier for a specific heat treatment batch of items.",
+                "SampleValues": [
+                    "561323",
+                    "A36",
+                    "453453"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country",
+                "Definition": "The country where the item was produced or sourced.",
+                "SampleValues": [
+                    "DNK",
+                    "MEX"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country name",
+                "Definition": "Represents the name of the country where the item is sourced.",
+                "SampleValues": [
+                    "United States",
+                    "Canada",
+                    "Mexico"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Disposition code",
+                "Definition": "Indicates the status or condition of an inventory item.",
+                "SampleValues": [
+                    "Second",
+                    "Avail"
+                ]
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Disposition status",
+                "Definition": "Indicates the current status of an item's disposition in inventory.",
+                "SampleValues": [
+                    "Available",
+                    "Unavailable"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Outside processor tag",
+                "Definition": "A tracking parameter for identifying instances processed externally.",
+                "SampleValues": [
+                    "poipuj",
+                    "334",
+                    "54879"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Master tag #",
+                "Definition": "Unique identifier for tracking a specific instance of an item.",
+                "SampleValues": [
+                    "-001",
+                    "<multiple>"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Mill tag #",
+                "Definition": "A unique identifier for tracking a specific instance of an item in the mill.",
+                "SampleValues": [
+                    "44444567",
+                    "43432432",
+                    "NC234"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag type",
+                "Definition": "Indicates the classification or category of the tracking parameter.",
+                "SampleValues": [
+                    "Master tag",
+                    "Remnant"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Silver",
+                "Definition": "Represents the name or description of silver items in inventory.",
+                "SampleValues": [
+                    12.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Aluminum",
+                "Definition": "Represents the aluminum inventory item, storing descriptive text.",
+                "SampleValues": [
+                    0,
+                    0.025,
+                    98.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Boron",
+                "Definition": "Represents a string value associated with the element Boron in inventory records.",
+                "SampleValues": [
+                    0,
+                    0.25,
+                    0.89
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Beryllium",
+                "Definition": "A string representation of Beryllium-related information or attributes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Coil weight",
+                "Definition": "Represents the weight of a coil item in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Inner diameter",
+                "Definition": "Measures the internal diameter of a cylindrical object in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Length",
+                "Definition": "Represents the measurement of an item in linear units.",
+                "SampleValues": [
+                    45.0,
+                    240.9,
+                    175.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Outer diameter",
+                "Definition": "Measurement of the item's outer edge diameter in numeric format.",
+                "SampleValues": [
+                    79.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "PIW",
+                "Definition": "A unique identifier for a specific inventory item.",
+                "SampleValues": [
+                    825
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quality",
+                "Definition": "Describes the condition or grade of the inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Thickness",
+                "Definition": "Represents the measurement of an item's thickness in numeric format.",
+                "SampleValues": [
+                    0.1718,
+                    0.1644
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Width",
+                "Definition": "Represents the measurement of an item's width in specified units.",
+                "SampleValues": [
+                    60.0,
+                    23.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Yield",
+                "Definition": "Represents the amount of product produced from a specific process or batch.",
+                "SampleValues": [
+                    362.0,
+                    65.0,
+                    31.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+166",
+                "Definition": "This column likely stores a large numeric value in string format, possibly for special cases or identifiers.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E4664",
+                "Definition": "This column stores alphanumeric identifiers for items or records.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+65",
+                "Definition": "This column likely stores alphanumeric identifiers or codes, possibly for tracking or categorization.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1863",
+                "Definition": "Represents a unique identifier or reference code for an item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1006",
+                "Definition": "A unique identifier for an item, stored as a variable-length string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E577",
+                "Definition": "Represents a unique identifier or code for an item or record.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1839",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E860",
+                "Definition": "A unique identifier for an inventory item, stored as text.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E357",
+                "Definition": "A unique identifier for an item, stored as a string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1247",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1883",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+170",
+                "Definition": "This represents a string value, likely an identifier or code, formatted in scientific notation.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor account",
+                "Definition": "Identifies the account associated with a vendor in the system.",
+                "SampleValues": [
+                    "10V00029",
+                    "20V00003",
+                    "10V00004"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor tag #",
+                "Definition": "Identifier assigned to a vendor for tracking purposes.",
+                "SampleValues": [
+                    "10PRD00050-001",
+                    "006183773"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Best before date",
+                "Definition": "Indicates the date until the item is expected to remain safe and effective for use.",
+                "SampleValues": [
+                    "2024-03-28 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Expiration date",
+                "Definition": "Indicates the date and time when an item is no longer usable or valid.",
+                "SampleValues": [
+                    "2022-11-30 00:00:00.0000000",
+                    "2099-01-01 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Production date",
+                "Definition": "The date and time when the item was produced.",
+                "SampleValues": [
+                    "2019-10-18 00:00:00.0000000",
+                    "2023-02-16 00:00:00.0000000",
+                    "2020-11-10 00:00:00.0000000"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "A tracking parameter used to monitor individual instances of inventory items.",
+        "Entity": "Tag",
+        "EntityName": "Tag",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Tag key",
+                "Definition": "Tag keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    187,
+                    2321,
+                    118
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "Vendor keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    33,
+                    19
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Manufacturing date key",
+                "Definition": "Manufacturing date keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    20200609,
+                    20240223,
+                    20200610
+                ]
+            },
+            {
+                "DataType": "smallint",
+                "Name": "Tags",
+                "Definition": "Represents tracking parameters assigned to inventory items.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag #",
+                "Definition": "A unique identifier used to track individual inventory items.",
+                "SampleValues": [
+                    "10008131",
+                    "10008131-001"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Item #",
+                "Definition": "Unique identifier for each inventory item, stored as a string.",
+                "SampleValues": [
+                    "PL006",
+                    "C012",
+                    "PLP006-AN"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Heat #",
+                "Definition": "Identifier for a specific batch or lot of items.",
+                "SampleValues": [
+                    "AK34",
+                    "A36",
+                    "AK128"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Disposition code",
+                "Definition": "Represents the status or action taken regarding an inventory item.",
+                "SampleValues": [
+                    "Second",
+                    "Avail"
+                ]
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Disposition status",
+                "Definition": "Indicates the current state or condition of an inventory item.",
+                "SampleValues": [
+                    "Available",
+                    "Unavailable"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Outside processor tag",
+                "Definition": "A tracking parameter for items processed externally.",
+                "SampleValues": [
+                    334,
+                    43533
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Silver",
+                "Definition": "Represents the name or identifier of a silver item in inventory.",
+                "SampleValues": [
+                    12.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Aluminum",
+                "Definition": "Represents the aluminum inventory item identifier or description.",
+                "SampleValues": [
+                    0,
+                    0.025,
+                    98.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Boron",
+                "Definition": "A string field representing information related to Boron in the inventory.",
+                "SampleValues": [
+                    0,
+                    0.25,
+                    0.89
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Beryllium",
+                "Definition": "A string representation of Beryllium-related information or attributes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Coil weight",
+                "Definition": "Represents the weight of the coil item in numerical format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Inner diameter",
+                "Definition": "Represents the measurement of the inner circle of a cylindrical item in numerical format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Length",
+                "Definition": "Represents the measurement of an item's length in specified units.",
+                "SampleValues": [
+                    240.9,
+                    45.0,
+                    65.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Outer diameter",
+                "Definition": "Represents the measurement of the item's outermost circular edge.",
+                "SampleValues": [
+                    79.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "PIW",
+                "Definition": "A unique identifier for a specific inventory item instance.",
+                "SampleValues": [
+                    825
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quality",
+                "Definition": "Describes the condition or standard of an item in inventory.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Thickness",
+                "Definition": "Represents the measurement of an item's thickness in numeric format.",
+                "SampleValues": [
+                    0.1718,
+                    0.1644
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Width",
+                "Definition": "Represents the measurement of an item's width in specified units.",
+                "SampleValues": [
+                    60.0,
+                    23.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Yield",
+                "Definition": "Represents the quantity of product obtained from a specific process or batch.",
+                "SampleValues": [
+                    362.0,
+                    65.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+166",
+                "Definition": "This represents a large numeric value stored as text, likely for special formatting or precision.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E4664",
+                "Definition": "This column likely stores a unique identifier or reference code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+65",
+                "Definition": "This column likely stores alphanumeric identifiers or codes, possibly for items or transactions.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1863",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1006",
+                "Definition": "A unique identifier or reference code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E577",
+                "Definition": "Represents a unique identifier or code related to inventory items.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1839",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E860",
+                "Definition": "A unique identifier for an inventory item, stored as a string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E357",
+                "Definition": "A variable-length string used to store alphanumeric identifiers or codes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1247",
+                "Definition": "A unique identifier for an item, typically representing a specific product or inventory instance.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1883",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+170",
+                "Definition": "This appears to be a misformatted value; typically, it should represent a numeric or scientific notation.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country",
+                "Definition": "Represents the country where the inventory item was produced or sourced.",
+                "SampleValues": [
+                    "DNK",
+                    "MEX"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country name",
+                "Definition": "Name of the country where the item was sourced or manufactured.",
+                "SampleValues": [
+                    "United States",
+                    "Canada",
+                    "Mexico"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Master tag #",
+                "Definition": "Unique identifier for tracking a specific instance of an item.",
+                "SampleValues": [
+                    "<multiple>",
+                    "10008131"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Mill tag #",
+                "Definition": "A unique identifier assigned to track a specific instance of an item.",
+                "SampleValues": [
+                    "43432432",
+                    "NC234",
+                    "45487"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag type",
+                "Definition": "Indicates the category or classification of the tracking parameter.",
+                "SampleValues": [
+                    "Master tag",
+                    "Remnant"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor account",
+                "Definition": "Identifies the account associated with the vendor in the inventory system.",
+                "SampleValues": [
+                    "10V00029",
+                    "10V00058",
+                    "20V00003"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor tag #",
+                "Definition": "A unique identifier assigned to track a vendor's item instance.",
+                "SampleValues": [
+                    "10PRD00050-001",
+                    "006183773"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Best before date",
+                "Definition": "Indicates the expiration date for perishable inventory items.",
+                "SampleValues": [
+                    "2024-03-28 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Expiration date",
+                "Definition": "Date and time when an item is no longer usable or valid.",
+                "SampleValues": [
+                    "2022-11-30 00:00:00.0000000",
+                    "2099-01-01 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Production date",
+                "Definition": "Represents the date and time when production occurred.",
+                "SampleValues": [
+                    "2020-11-10 00:00:00.0000000",
+                    "2023-04-10 00:00:00.0000000",
+                    "2024-02-26 00:00:00.0000000"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Represents the current inventory status of tagged items.",
+        "Entity": "Tag on-hand",
+        "EntityName": "Tag on-hand",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "Vendor keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    18,
+                    43,
+                    33
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Legal entity key",
+                "Definition": "Legal entity keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    1,
+                    2
+                ]
+            },
+            {
+                "DataType": "date",
+                "Name": "Vendor create date",
+                "Definition": "Date when the vendor record was created in the system.",
+                "SampleValues": [
+                    "2019-11-04",
+                    "2021-08-10",
+                    "2019-12-11"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor delivery mode",
+                "Definition": "Indicates the method of delivery used by the vendor for shipments.",
+                "SampleValues": [
+                    "RailC-Rail",
+                    "Truck"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor delivery mode name",
+                "Definition": "Describes the method used by the vendor for item delivery.",
+                "SampleValues": [
+                    "Truck",
+                    "RailCarrier-Rail"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor delivery term",
+                "Definition": "Specifies the conditions and timing for product delivery from the vendor.",
+                "SampleValues": [
+                    "FOB",
+                    "CFR"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor delivery term name",
+                "Definition": "Describes the agreed-upon delivery conditions from the vendor.",
+                "SampleValues": [
+                    "Free on board",
+                    "Cost and freight"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Our account #",
+                "Definition": "Represents the unique identifier for the company's account in the system.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor payment mode",
+                "Definition": "Indicates the method used for vendor payments, such as credit, cash, or bank transfer.",
+                "SampleValues": [
+                    "CREDIT",
+                    "ACH"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor payment mode name",
+                "Definition": "Describes the method of payment used for vendor transactions.",
+                "SampleValues": [
+                    "Credit",
+                    "ACH"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor payment term",
+                "Definition": "Describes the conditions under which payments are made to vendors.",
+                "SampleValues": [
+                    "N30"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor payment term name",
+                "Definition": "Describes the payment terms agreed upon with a vendor.",
+                "SampleValues": [
+                    "Net 30",
+                    "Net 30 days"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor",
+                "Definition": "Represents the name or identifier of the supplier providing inventory items.",
+                "SampleValues": [
+                    "Neenah Foundry - 10V00009",
+                    "Tata Steel - 10V00045",
+                    "Barnes Aerospace - 10V00063"
+                ]
+            },
+            {
+                "DataType": "smallint",
+                "Name": "Vendors",
+                "Definition": "Identifies the vendor associated with the inventory item.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor #",
+                "Definition": "Identifier for the supplier providing the inventory item.",
+                "SampleValues": [
+                    "20V00003",
+                    "10V00004",
+                    "10V00029"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor alias",
+                "Definition": "An alternative name or identifier for a vendor in the system.",
+                "SampleValues": [
+                    "Chicago Tube and Iro",
+                    "Nucor Corp.",
+                    "US Steel Corp."
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor city",
+                "Definition": "City where the vendor is located.",
+                "SampleValues": [
+                    "Chicago",
+                    "Charlotte",
+                    "Pell City"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor country",
+                "Definition": "This column stores the country of the vendor as a text string.",
+                "SampleValues": [
+                    "USA"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor country name",
+                "Definition": "Name of the country where the vendor is located.",
+                "SampleValues": [
+                    "United States"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor e-mail",
+                "Definition": "Contact email address for the vendor.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor group",
+                "Definition": "Categorizes vendors into specific groups for management and reporting purposes.",
+                "SampleValues": [
+                    "Subcon",
+                    "Misc",
+                    "Equip. Ven"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor group name",
+                "Definition": "Identifies the category or classification of the vendor for inventory management.",
+                "SampleValues": [
+                    "Equipment Manufacturer",
+                    "Other"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor type",
+                "Definition": "Categorizes the vendor based on their business model or relationship with the company.",
+                "SampleValues": [
+                    "Non-MRO"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor invoice account",
+                "Definition": "Identifies the account associated with vendor invoices for billing purposes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor name",
+                "Definition": "The name of the supplier providing goods or services.",
+                "SampleValues": [
+                    "US Steel Corp.",
+                    "Allied",
+                    "Certified Heat Treat"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor on-hold status",
+                "Definition": "Indicates whether a vendor's account is currently on hold, affecting transactions.",
+                "SampleValues": [
+                    "No hold",
+                    "Hold - All"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor phone",
+                "Definition": "Stores the contact telephone number of the vendor.",
+                "SampleValues": [
+                    "(767) 243-3344",
+                    "(503) 220-5200",
+                    "(656) 768-3625"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor state province",
+                "Definition": "Represents the state or province of the vendor's location.",
+                "SampleValues": [
+                    "IN",
+                    "OR",
+                    "OH"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor street",
+                "Definition": "Address line for the vendor's physical location.",
+                "SampleValues": [
+                    "11650 Mahoning Ave",
+                    "1915 Rexford Rd",
+                    "767 Van Buren"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor postal code",
+                "Definition": "Represents the postal code of the vendor's location.",
+                "SampleValues": [
+                    97201,
+                    48430,
+                    15222
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor VAT number",
+                "Definition": "A unique identifier for a vendor's tax registration in a specific country.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "int",
+                "Name": "Vendor count",
+                "Definition": "Represents the number of vendors associated with a specific inventory item.",
+                "SampleValues": [
+                    1
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "An entity representing suppliers providing goods or services to the organization.",
+        "Entity": "Vendor",
+        "EntityName": "Vendor",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Warehouse key",
+                "Definition": "Warehouse keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    43,
+                    33,
+                    18
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory site index",
+                "Definition": "Identifier for the location of inventory items within the system.",
+                "SampleValues": [
+                    "cmaDFW",
+                    "cmaIN",
+                    "cmcVAN"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Legal entity",
+                "Definition": "Represents the official name of the organization or company.",
+                "SampleValues": [
+                    "cmc",
+                    "cma"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Customer #",
+                "Definition": "Identifier for customers in the system, stored as a variable-length string.",
+                "SampleValues": [
+                    "10C00003"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory site",
+                "Definition": "Represents the location or facility where inventory items are stored.",
+                "SampleValues": [
+                    "IN",
+                    "CHI",
+                    "DFW"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Inventory site name",
+                "Definition": "The name of the location where inventory is stored.",
+                "SampleValues": [
+                    "Chicago",
+                    "Marietta"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse",
+                "Definition": "Represents the name or identifier of the storage location for inventory items.",
+                "SampleValues": [
+                    "Barnes",
+                    "MTP - FIN",
+                    "CHI"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse city",
+                "Definition": "Represents the city location of the warehouse.",
+                "SampleValues": [
+                    "Indianapolis",
+                    "Rochester"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse country",
+                "Definition": "Represents the country where the warehouse is located.",
+                "SampleValues": [
+                    "USA"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse country name",
+                "Definition": "Represents the name of the country where the warehouse is located.",
+                "SampleValues": [
+                    "United States"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse name",
+                "Definition": "Represents the name of the storage location for inventory items.",
+                "SampleValues": [
+                    "Chicago",
+                    "Indianapolis Under",
+                    "Nashville quarantine"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse state province",
+                "Definition": "Represents the state or province where the warehouse is located.",
+                "SampleValues": [
+                    "IN",
+                    "TN"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse street",
+                "Definition": "Street address of the warehouse location.",
+                "SampleValues": [
+                    "720 Cool Spring BLVD",
+                    "3059 Hazleton"
+                ]
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Warehouse type",
+                "Definition": "Indicates the classification or category of the warehouse.",
+                "SampleValues": [
+                    "Standard",
+                    "Transit"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Warehouse postal code",
+                "Definition": "Represents the postal code of the warehouse location.",
+                "SampleValues": [
+                    46220,
+                    48307
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor #",
+                "Definition": "Identifies the supplier associated with the inventory item.",
+                "SampleValues": [
+                    "10V00017",
+                    "10V00014"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "A location for storing inventory and managing stock levels.",
+        "Entity": "Warehouse",
+        "EntityName": "Warehouse",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Warehouse location key",
+                "Definition": "Warehouse location keyis a foreign key column to connect to other tables",
+                "SampleValues": [
+                    211,
+                    306,
+                    138
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Location",
+                "Definition": "Represents the physical or designated area where inventory items are stored.",
+                "SampleValues": [
+                    "User10",
+                    "QA",
+                    "234"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Site",
+                "Definition": "Represents the location or facility where inventory items are stored.",
+                "SampleValues": [
+                    "Chicago",
+                    "Marietta"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "Represents specific physical areas within a warehouse for storing inventory items.",
+        "Entity": "Warehouse location",
+        "EntityName": "Warehouse location",
+        "EntityRelationships": [],
+        "Warehouse": null
+    },
+    {
+        "Columns": [
+            {
+                "DataType": "bigint",
+                "Name": "Tag key",
+                "Definition": "This is a foreign key column to connect to other tables.",
+                "SampleValues": [
+                    2534,
+                    93,
+                    2006
+                ]
+            },
+            {
+                "DataType": "bigint",
+                "Name": "Vendor key",
+                "Definition": "This is a foreign key column to connect to other tables.",
+                "SampleValues": [
+                    33,
+                    18,
+                    19
+                ]
+            },
+            {
+                "DataType": "int",
+                "Name": "Manufacturing date key",
+                "Definition": "This is a foreign key column to connect to other tables related to manufacturing dates.",
+                "SampleValues": [
+                    20240223,
+                    20210811,
+                    20230327
+                ]
+            },
+            {
+                "DataType": "smallint",
+                "Name": "Tags",
+                "Definition": "A numerical identifier used to categorize or track inventory items.",
+                "SampleValues": [
+                    1
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag #",
+                "Definition": "A unique identifier used to track an item instance.",
+                "SampleValues": [
+                    "-001",
+                    "<multiple>-001"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Item #",
+                "Definition": "Unique identifier for each inventory item, represented as a string.",
+                "SampleValues": [
+                    "C012",
+                    "3105IHS",
+                    "S023"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Heat #",
+                "Definition": "Identifier for a specific heat treatment process or batch.",
+                "SampleValues": [
+                    "561323",
+                    "A36",
+                    "453453"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country",
+                "Definition": "Represents the country where the item was manufactured or sourced.",
+                "SampleValues": [
+                    "DNK",
+                    "MEX"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Origin country name",
+                "Definition": "Represents the name of the country where the item was produced or sourced.",
+                "SampleValues": [
+                    "United States",
+                    "Canada",
+                    "Mexico"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Disposition code",
+                "Definition": "Represents the status or condition of an inventory item.",
+                "SampleValues": [
+                    "Second",
+                    "Avail"
+                ]
+            },
+            {
+                "DataType": "nvarchar",
+                "Name": "Disposition status",
+                "Definition": "Indicates the current condition or status of an item in inventory.",
+                "SampleValues": [
+                    "Available",
+                    "Unavailable"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Outside processor tag",
+                "Definition": "A tracking parameter for monitoring external processing of an item.",
+                "SampleValues": [
+                    "poipuj",
+                    "334",
+                    "54879"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Master tag #",
+                "Definition": "Unique identifier for tracking a specific instance of an item.",
+                "SampleValues": [
+                    "-001",
+                    "<multiple>"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Mill tag #",
+                "Definition": "A unique identifier used to track items in the mill inventory.",
+                "SampleValues": [
+                    "44444567",
+                    "43432432",
+                    "NC234"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Tag type",
+                "Definition": "Indicates the classification or category of the tracking parameter.",
+                "SampleValues": [
+                    "Master tag",
+                    "Remnant"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Silver",
+                "Definition": "Represents the name or identifier of a silver item in inventory.",
+                "SampleValues": [
+                    12.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Aluminum",
+                "Definition": "Represents the aluminum material type used in inventory items.",
+                "SampleValues": [
+                    0,
+                    0.025,
+                    98.5
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Boron",
+                "Definition": "Represents a string value associated with the Boron inventory item.",
+                "SampleValues": [
+                    0,
+                    0.25,
+                    0.89
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Beryllium",
+                "Definition": "Represents information related to the element Beryllium, stored as text.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Coil weight",
+                "Definition": "Represents the weight of a coil in numeric format.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Inner diameter",
+                "Definition": "Represents the measurement of the inside width of a cylindrical object.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Length",
+                "Definition": "Represents the measurement of an item's length in a numeric format.",
+                "SampleValues": [
+                    45.0,
+                    240.9,
+                    175.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Outer diameter",
+                "Definition": "Represents the measurement of the item's outer circumference in numeric format.",
+                "SampleValues": [
+                    79.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "PIW",
+                "Definition": "Represents a unique identifier or code for a product inventory warehouse.",
+                "SampleValues": [
+                    825
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Quality",
+                "Definition": "Describes the condition or standard of the item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Thickness",
+                "Definition": "Represents the measurement of an item's thickness in numeric format.",
+                "SampleValues": [
+                    0.1718,
+                    0.1644
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Width",
+                "Definition": "Represents the measurement of an item's width in a numeric format.",
+                "SampleValues": [
+                    60.0,
+                    23.0
+                ]
+            },
+            {
+                "DataType": "numeric",
+                "Name": "Yield",
+                "Definition": "Represents the amount of product produced from a specific process or batch.",
+                "SampleValues": [
+                    362.0,
+                    65.0,
+                    31.0
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+166",
+                "Definition": "This column likely stores a large numeric value as a string, possibly representing a unique identifier or code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E4664",
+                "Definition": "A unique identifier for an inventory item, stored as a string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+65",
+                "Definition": "This column likely stores large numerical values in string format, possibly for identification or reference purposes.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1863",
+                "Definition": "A unique identifier for a specific inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1006",
+                "Definition": "A variable character field used to store alphanumeric data.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E577",
+                "Definition": "This column stores alphanumeric data, possibly representing a unique identifier or code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1839",
+                "Definition": "Represents a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E860",
+                "Definition": "A unique identifier for an inventory item, stored as a variable-length string.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E357",
+                "Definition": "This column stores alphanumeric values, likely representing a unique identifier or reference code.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1247",
+                "Definition": "This column likely stores a unique identifier or code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1E1883",
+                "Definition": "Represents a unique identifier or reference code for an inventory item.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "1.00E+170",
+                "Definition": "This column likely stores large numeric values in string format, possibly for special cases or scientific notation.",
+                "SampleValues": []
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor account",
+                "Definition": "Identifier for the vendor associated with inventory items.",
+                "SampleValues": [
+                    "10V00029",
+                    "20V00003",
+                    "10V00004"
+                ]
+            },
+            {
+                "DataType": "varchar",
+                "Name": "Vendor tag #",
+                "Definition": "A unique identifier assigned to each vendor for tracking purposes.",
+                "SampleValues": [
+                    "10PRD00050-001",
+                    "006183773"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Best before date",
+                "Definition": "Indicates the date by which the item should be consumed for optimal quality.",
+                "SampleValues": [
+                    "2024-03-28 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Expiration date",
+                "Definition": "Represents the date and time when an item is no longer usable or valid.",
+                "SampleValues": [
+                    "2022-11-30 00:00:00.0000000",
+                    "2099-01-01 00:00:00.0000000"
+                ]
+            },
+            {
+                "DataType": "datetime2",
+                "Name": "Production date",
+                "Definition": "Indicates the date and time when the production occurred.",
+                "SampleValues": [
+                    "2019-10-18 00:00:00.0000000",
+                    "2023-02-16 00:00:00.0000000",
+                    "2020-11-10 00:00:00.0000000"
+                ]
+            }
+        ],
+        "CompleteEntityRelationshipsGraph": [],
+        "Database": "db-cmaa-nonprod-perfmd-synlnk",
+        "Schema": "gold",
+        "Definition": "A tracking parameter used to identify and monitor specific instances of items in inventory.",
+        "Entity": "Tag",
+        "EntityName": "Tag",
+        "EntityRelationships": [],
+        "Warehouse": null
+    }
+]

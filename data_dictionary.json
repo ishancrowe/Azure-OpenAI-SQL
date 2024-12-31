@@ -1,0 +1,429 @@
+[
+  {
+    "Columns": [
+      {
+        "DataType": "bigint",
+        "Name": "AP balance key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "AP balance count",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Aging bucket key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Balance date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Due date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Financial key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Invoice date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Remit-to vendor key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Legal entity key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Purchase invoice key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Invoice vendor key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Voucher key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "numeric",
+        "Name": "Activity amount",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "numeric",
+        "Name": "Opening balance",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "numeric",
+        "Name": "Closing balance",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "AP age by invoice date",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "AP age by due date",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Discount available",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Discount lost",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Discount taken",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Payment days",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "date",
+        "Name": "Discount date",
+        "Definition": "",
+        "SampleValues": []
+      }
+    ],
+    "CompleteEntityRelationshipsGraph": [],
+    "Database": "db-cmaa-nonprod-perfmd-synlnk",
+    "Schema": "gold",
+    "Definition": "This is defionation of AP balance detail fact",
+    "Entity": "AP balance detail fact",
+    "EntityName": "AP balance detail fact",
+    "EntityRelationships": [],
+    "Warehouse": null
+  },
+  {
+    "Columns": [
+      {
+        "DataType": "bigint",
+        "Name": "AP trans key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Aging bucket invoice key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Aging bucket due key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Close date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Currency key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Due date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Financial key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Invoice date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Last settle date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Ledger trans type key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Legal entity key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Payment mode key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Payment term key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Purchase invoice key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Trans date key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Remit-to vendor key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Invoice vendor key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Voucher key",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Approved invoices",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Open invoices",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Closed invoices",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "numeric",
+        "Name": "Discount lost",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "numeric",
+        "Name": "Discount used",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Payment amount",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Payment amount in trans currency",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Trans amount",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Trans amount in trans currency",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Trans currency",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Settled amount",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "decimal",
+        "Name": "Settled amount in trans currency",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Approver",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "bigint",
+        "Name": "Approval status",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Approval status name",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Invoice payments",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Check status",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Invoice #",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Reconciled status",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Payment days",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Payment reference",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Payment text",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Trans text",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "varchar",
+        "Name": "Trans type",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "date",
+        "Name": "Close date",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "date",
+        "Name": "Date last settled",
+        "Definition": "",
+        "SampleValues": []
+      },
+      {
+        "DataType": "int",
+        "Name": "Trans count",
+        "Definition": "",
+        "SampleValues": []
+      }
+    ],
+    "CompleteEntityRelationshipsGraph": [],
+    "Database": "db-cmaa-nonprod-perfmd-synlnk",
+    "Schema": "gold",
+    "Definition": "",
+    "Entity": "AP trans fact",
+    "EntityName": "AP trans fact",
+    "EntityRelationships": [],
+    "Warehouse": null
+  }
+  
+]
